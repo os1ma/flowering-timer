@@ -1,0 +1,93 @@
+/* 全体 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app,
+.all {
+  height: 100%;
+}
+
+.all {
+  background-size: 100% 100%;
+}
+
+/* 選択画面 */
+
+#top {
+  background-image: url("./img/seeds.png");
+  background-color: #7cbbd3;
+}
+
+.head {
+  height: 25%;
+}
+
+ul {
+  height: 50%;
+}
+
+li {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+
+.selecting-circle {
+  width: 200px;
+  height: 200px;
+  border: 10px solid white;
+  border-radius: 105px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selecting-bar {
+  width: 160px;
+  height: 10px;
+  border: 10px solid white;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* タイマー画面 */
+
+.time {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pausing {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pause-icon {
+  width: 200px;
+  height: 30px;
+  border: 10px solid white;
+  border-radius: 25px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[v-cloak] {
+  display: none;
+}

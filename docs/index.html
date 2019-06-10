@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>話に花が咲くタイマー</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="top" class="all" v-if="!selected">
+        <div class="head"></div>
+        <ul>
+          <li v-for="sec in [5, 10, 20, 30]" @click="select(sec)">
+            <div v-if="selecting(sec)">
+              <div class="selecting-circle"></div>
+              <div class="selecting-bar"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="all"
+        :style="{ 'background-image': image }"
+        v-else
+        @click="pauseOrStart"
+        @dblclick="stop"
+      >
+        <div class="all" :class="{ pausing: pausing }">
+          <div class="time">{{ time }}</div>
+          <div v-if="pausing" class="pause-icon"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
