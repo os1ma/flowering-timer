@@ -10,7 +10,7 @@
       <div id="top" class="all" v-if="!selected">
         <div class="head"></div>
         <ul>
-          <li v-for="sec in [5, 10, 20, 30]" @click="select(sec)">
+          <li v-for="sec in [3, 5, 10, 20]" @click="select(sec)">
             <div v-if="selecting(sec)">
               <div class="selecting-circle"></div>
               <div class="selecting-bar"></div>
