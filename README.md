@@ -1,2 +1,3 @@
 # flowering-timer
-Web timer which blooms with time
+
+[話に花が咲くタイマー](https://flower.webtimer.jp)
